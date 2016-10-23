@@ -4,6 +4,8 @@
     <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
 
     <link rel="import" href="elements/my-signup.html">
+    <!-- De core-components-page worden gedefinieerd om het core-ajax element te kunnen POSTen naar een webdienst. -->
+    <link rel="import" href="bower_components/core-component-page/core-component-page.html">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.20/webcomponents.min.js"></script>
     <script src="http://basicwebcomponents.org/basic-web-components/packages/basic-autosize-textarea/dist/basic-autosize-textarea.js"></script>
@@ -22,7 +24,7 @@
 </head>
 <body>
     <!-- HTML requires that custom web components have at least one hyphen in the name -->
-    <my-signup name="Jeroen"></my-signup>
+    <my-signup name="Jeroen" url="http://dummypostservice.com"></my-signup>
     <p>
         This auto-sizing text input component
         should work in all modern browsers:
