@@ -1,0 +1,34 @@
+{
+  "name": "elastic-search",
+  "version": "0.0.3",
+  "authors": [
+    "David Flynt"
+  ],
+  "description": "web component interface to the elasticsearch client search API",
+  "keywords": [
+    "Elasticsearch",
+    "elastic",
+    "ElasticUI",
+    "web-component",
+    "polymer"
+  ],
+  "main": "elastic-search.html",
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/ElasticElements/elastic-search",
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0",
+    "elastic-client": "ElasticElements/elastic-client",
+    "ee-common": "ElasticElements/ee-common"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "^4.2.2"
+  },
+  "resolutions": {
+    "lodash": "^4.12.0"
+  }
+}

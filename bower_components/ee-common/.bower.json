@@ -1,0 +1,44 @@
+{
+  "name": "ee-common",
+  "homepage": "https://github.com/ElasticElements/ee-common",
+  "authors": [
+    "David Flynt"
+  ],
+  "description": "common html file that most Elastic Elements should import",
+  "main": "ee-common.html",
+  "keywords": [
+    "elasticsearch",
+    "elastic",
+    "ElasticElements"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "elasticsearch": "^11.0.1",
+    "lodash": "^4.12.0",
+    "elastic.js": "^1.2.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "^4.2.0",
+    "polymer": "^1.5.0"
+  },
+  "resolutions": {
+    "lodash": "^4.12.0"
+  },
+  "_release": "2988a99474",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "2988a99474e63df036826dcb0b01b6cfe692ff0f"
+  },
+  "_source": "git://github.com/ElasticElements/ee-common.git",
+  "_target": "*",
+  "_originalSource": "ElasticElements/ee-common"
+}

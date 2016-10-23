@@ -2,9 +2,33 @@
 <html>
 <head>
     <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+
     <link rel="import" href="elements/my-signup.html">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.20/webcomponents.min.js"></script>
+    <script src="http://basicwebcomponents.org/basic-web-components/packages/basic-autosize-textarea/dist/basic-autosize-textarea.js"></script>
+    <style>
+    my-signup {
+        background-color: red;
+        display: block;
+    }
+    my-signup p {
+        color: white; /* this will not work */
+    }
+    my-signup::shadow p {
+        color: white; /* this will work */
+    }
+    </style>
 </head>
 <body>
-    <my-signup></my-signup>
+    <!-- HTML requires that custom web components have at least one hyphen in the name -->
+    <my-signup name="Jeroen"></my-signup>
+    <p>
+        This auto-sizing text input component
+        should work in all modern browsers:
+    </p>
+
+    <basic-autosize-textarea minimum-rows="2" placeholder="Type all you want here!">
+</basic-autosize-textarea>
 </body>
 </html>
